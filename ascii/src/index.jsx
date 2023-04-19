@@ -17,7 +17,7 @@ import PostCreate from "./components/PostCreate";
 import quizOp from "./components/quizsection/quizOp";
 import LeaderBoard from "./components/LeaderBoard";
 
-export const server = "http://localhost:4000";
+export const server = "https://ascii-server.onrender.com";
 
 const usser = JSON.parse(localStorage.getItem("user"));
 

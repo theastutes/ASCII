@@ -12,7 +12,7 @@ function QuizList() {
     //   method: "GET",
     // });
 
-    const quizzes = await axios.get(`http://localhost:4000/api/quizzes/getquiz`);
+    const quizzes = await axios.get(`https://ascii-server.onrender.com/api/quizzes/getquiz`);
 
     // const data = await response.json();
     // // console.log(data);

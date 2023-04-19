@@ -57,7 +57,7 @@ function QuizCreate() {
   async function handleSubmit(e) {
     e.preventDefault();
 
-    await axios.post("http://localhost:4000/api/quizzes/quizform", {
+    await axios.post("https://ascii-server.onrender.com/api/quizzes/quizform", {
         headers: {
           "Content-Type": "application/json",
         },
