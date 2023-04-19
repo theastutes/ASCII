@@ -26,7 +26,7 @@ app.use(bodyParser.json());
 app.use(express.urlencoded({extended:false}));
 app.use(express.json());
 app.use(cors({
-    origin:"https://main--aesthetic-chebakia-2122ec.netlify.app/",
+    origin:["https://main--aesthetic-chebakia-2122ec.netlify.app/"],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
 }));
