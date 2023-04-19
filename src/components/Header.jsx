@@ -21,7 +21,7 @@ export default function Header() {
       <div className="fixed left-[0px] right-[0px] flex align-middle justify-end pt-[9px] pb-[9px] top-[0px] text-xl md:bg-white/50 fd:bg-white backdrop-blur-lg z-50 shadow-zinc-200 shadow-md rounded-md">
         <Link
           to = "/dashboard"
-          className="flex flex-row text-[25px] mr-auto ml-6  pl-2 pr-2  text-black"
+          className="flex flex-row text-[25px] mr-auto ml-6 md:ml-3 pl-2 pr-2  text-black"
         >
           <div className="asci-text font-bold"> ASCII</div>
           <div className="flex text-zinc-800 text-base ml-4 mt-1 md:hidden">
@@ -36,7 +36,7 @@ export default function Header() {
           <i class="fa fa-search fa-sm" aria-hidden="true"></i>
           <input
             type="text"
-            className=" focus:w-[208px] active:w-[200] hover:w-52 w-11 fd:w-48 text-xs ml-4 "
+            className=" fd:focus:w-[208px] fd:active:w-[200] hover:w-52 w-11 md:focus:w-20 fd:w-48 text-xs ml-4 "
             name="search"
             id="search"
             placeholder="Search"

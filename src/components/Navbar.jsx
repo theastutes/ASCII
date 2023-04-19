@@ -5,7 +5,7 @@ import store from "store";
 export default function Navbar() {
   const user = store.get("user");
   return (
-    <div className="absolute left-[3px] right-[3px] rounded-lg navbar  z-50 flex justify-around bg-white/40 backdrop-blur-lg bottom-[2px] pt-2 pb-2 text-xl shadow-2xl shadow-black">
+    <div className="fixed  rounded-lg navbar  z-50 flex justify-around bg-white/40 backdrop-blur-lg bottom-[2px] pt-2 pb-2 text-xl shadow-2xl shadow-black">
       <Link to={user ? `/dashboard` : ""} className=" text-xl  text-black">
         <button>
           <i class="fa fa-home" aria-hidden="true"></i>
