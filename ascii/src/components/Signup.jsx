@@ -111,6 +111,7 @@ const Signup = () => {
                 onChange={uploadImage}
                 name="photo"
                 ref = {imageUploader}
+                
                 multiple="false"
                 style={{ display: "none" }}
               />
@@ -123,6 +124,7 @@ const Signup = () => {
           value={name}
           onChange={(e) => setName(e.target.value)}
           type="text"
+          autoComplete="off"
           placeholder="Name"
           required
         />
@@ -130,6 +132,7 @@ const Signup = () => {
           className="w-[90%] p-[5px] px-[10px] rounded-lg"
           placeholder="Roll No"
           type="number"
+          autoComplete="off"
           onChange={(e)=>setRoll(e.target.value)}
           value={roll}
         />
@@ -156,6 +159,7 @@ const Signup = () => {
           type="email"
           placeholder="Email"
           required
+          autoComplete="off"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
@@ -164,6 +168,7 @@ const Signup = () => {
           type="password"
           required
           placeholder="Password"
+          autoComplete="off"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
