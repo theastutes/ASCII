@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import {server} from '../';
 import LBframe from "./LBframe";
 import axios from "axios";
 import { useEffect } from "react";
@@ -8,7 +8,7 @@ const LeaderBoard = () => {
   const [data,setData] = useState([]);
 
   async function getdata(){
-      const userdata = await axios.get("http://localhost:4000/api/users/leaderboard");
+      const userdata = await axios.get(`${server}/api/users/leaderboard`);
       setData(userdata.data);
   }
 

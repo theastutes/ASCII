@@ -5,7 +5,7 @@ import QuestionCard from "./QuestionCard";
 import { useEffect } from "react";
 import QuizAttempt from "./QuizList";
 import QuizList from "./QuizList";
-
+import {server} from "../..";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
@@ -57,7 +57,7 @@ function QuizCreate() {
   async function sendSubmit(e) {
     e.preventDefault();
     navigate("/quizOp")
-    await axios.post("http://localhost:4000/api/quizzes/quizform", {
+    await axios.post(`${server}/api/quizzes/quizform`, {
         headers: {
           "Content-Type": "application/json",
         },

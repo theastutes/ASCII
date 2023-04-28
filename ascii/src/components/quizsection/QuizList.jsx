@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-
+import {server} from "../../";
 import QuizCard from "./QuizCard";
 function QuizList() {
   const [allQuiz, setAllQuiz] = useState([]);
@@ -12,7 +12,7 @@ function QuizList() {
     //   method: "GET",
     // });
 
-    const quizzes = await axios.get(`http://localhost:4000/api/quizzes/getquiz`);
+    const quizzes = await axios.get(`${server}/api/quizzes/getquiz`);
 
     // const data = await response.json();
     // // console.log(data);
