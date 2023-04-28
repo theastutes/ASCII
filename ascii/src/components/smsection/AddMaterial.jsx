@@ -25,7 +25,7 @@ export default function AddMaterial() {
     }
 
     return (
-        <div className=" fixed flex flex-col items-end  right-5 md:right-10    bottom-14 md:px-4 z-10 text-seagreen">
+        <div className=" fixed flex flex-col items-end  right-8 md:right-4    bottom-14 md:px-4 z-10 text-seagreen">
 
             {file.name && <div className="flex flex-col items-end">
                 <div className="bg-white/90 rounded-lg my-3 p-2 px-3 text-lg">{file.name} <button className="text-sm ml-2 text-zinc-700/80" onClick={(e)=>{setFile('')}}><i class="fa-solid fa-x"></i></button></div> 
