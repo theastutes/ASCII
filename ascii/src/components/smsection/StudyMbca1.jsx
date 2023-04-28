@@ -40,7 +40,7 @@ export default function StudyMbca1(){
             <AddMaterial/>
 
             <div className="absolute flex flex-col 
-                items-center justify-center w-[65%] h-[94%] fd:right-44 
+                items-center  w-[65%] h-[94%] fd:right-44 md:right-16 
                  top-0 pt-20 
                  ">
 
