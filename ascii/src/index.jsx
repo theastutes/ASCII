@@ -18,7 +18,7 @@ import quizOp from "./components/quizsection/quizOp";
 import LeaderBoard from "./components/LeaderBoard";
 import StudyMbca1 from "./components/smsection/StudyMbca1";
 
-export const server = "http://localhost:4000";
+export const server = "https://ascii-server.onrender.com";
 
 const usser = JSON.parse(localStorage.getItem("user"));
 
