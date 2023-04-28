@@ -109,6 +109,10 @@ button {
     display: none;
   }
 
+  i:focus{
+    color: #00adb5;
+  }
+
   .Card{
     display: none;
   }
