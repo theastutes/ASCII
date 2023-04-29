@@ -8,7 +8,7 @@ export default function Sidebar(props) {
   const user = store.get("user");
   return (
     <div className="sidebar fixed flex flex-col items-left bg-white backdrop-blur-lg justify-top w-52 h-screen shadow-sm shadow-gray-400 z-20">
-      <button disabled={!user} onClick={props.setwpage(false)} >
+      <button disabled={!user} onClick={(e) => props.setwpage(false)} >
         <Link
           to={user ? `/dashboard` : ""} 
           className="flex flex-row justify-between p-4 ml-6 mt-20 w-40 text-sm hover:text-seagreen focused:text-seagreen mb-2   border-b-2 border-b-zinc-900 text-black sidebar-elements"
@@ -19,7 +19,7 @@ export default function Sidebar(props) {
         </Link>
       </button>
 
-      <button disabled={!user} onClick={props.setwpage(false)} >
+      <button disabled={!user} onClick={(e) => props.setwpage(false)} >
         <Link
           to={user ? `/quizop` : ""} 
           className="flex flex-row justify-between p-4 ml-6 w-40 text-sm   mb-2   border-b-2 border-b-zinc-900 text-black sidebar-elements"
@@ -31,7 +31,7 @@ export default function Sidebar(props) {
         </Link>
       </button>
 
-      <button disabled={!user} onClick={props.setwpage(false)} >
+      <button disabled={!user} onClick={(e) => props.setwpage(false)} >
         <Link
           className="flex flex-row justify-between p-4 ml-6 w-40 text-sm   mb-2   border-b-2 border-b-zinc-900 text-black sidebar-elements"
           to={user ? `/leaderboard` : ""}
@@ -43,7 +43,7 @@ export default function Sidebar(props) {
 
       <button
         disabled={!user}
-        onClick={props.setwpage(false)} 
+        onClick={(e) => props.setwpage(false)} 
         
       >
         <Link to={user?`/studymaterial`:""} className="flex flex-row justify-between p-4 ml-6 w-40 text-sm   mb-2   border-b-2 border-b-zinc-900 text-black sidebar-elements">
