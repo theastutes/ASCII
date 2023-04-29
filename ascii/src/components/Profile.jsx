@@ -74,7 +74,7 @@ export default function Profile() {
           </div>
         </div>
         <hr className="border-white  w-5/6 self-center mb-[8px]" />
-        <div className="profile-content flex flex-col gap-[10px]  text-[13px] text-zinc-700 w-[240px] h-[140px] mx-[5px] mb-[9px] rounded-lg  bg-white/60 p-[5px] pt-[10px] pl-[12px]">
+        <div className="profile-content flex flex-col gap-[10px]  text-[10px] text-zinc-700 w-[240px] h-[140px] mx-[5px] mb-[9px] rounded-lg  bg-white/60 p-[5px] pt-[10px] pl-[12px]">
           <div>
             <i class="fa-solid fa-user"></i> : {name}
           </div>

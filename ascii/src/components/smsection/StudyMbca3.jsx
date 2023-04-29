@@ -5,7 +5,7 @@ import { server } from "../..";
 import { Link } from "react-router-dom";
 import SmCard from "./SmCard";
 
-export default function StudyMbca1(){
+export default function StudyMbca3(){
 
     const [smfile, setSmfile] = useState([]);
 

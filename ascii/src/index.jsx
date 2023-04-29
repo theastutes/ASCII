@@ -17,6 +17,7 @@ import PostCreate from "./components/PostCreate";
 import quizOp from "./components/quizsection/quizOp";
 import LeaderBoard from "./components/LeaderBoard";
 import StudyMbca1 from "./components/smsection/StudyMbca1";
+import StudyMbca3 from "./components/smsection/StudyMbca3";
 
 export const server = "https://ascii-server.onrender.com";
 
@@ -68,6 +69,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <Route path="/leaderboard" Component={LeaderBoard} />
       <Route path = "/studymaterial" Component={StudyMaterial}/>
       <Route path="/smbca1" Component={StudyMbca1}/>
+      <Route path="/smbca3" Component={StudyMbca3}/>
     </Routes>
     <Toaster />
   </BrowserRouter>
