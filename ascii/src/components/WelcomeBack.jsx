@@ -3,11 +3,11 @@ import store from 'store';
 import { Link } from "react-router-dom";
 
 export default function WelcomeBack(props){
-    const [usernm,setUsernm] = useState({});
+    const [usernm,setUsernm] = useState('');
     useEffect(()=>{
         const usr = store.get('user').name;
         const nameindex = usr.indexOf(" ");
-        const name = uname.substring(0,nameindex);
+        const name = usr.substring(0,nameindex);
         setUsernm(name);
     },[]);
     return (
