@@ -7,7 +7,8 @@ export default function WelcomeBack({setwpage}){
     const [usernm,setUsernm] = useState('');
     useEffect(()=>{
        const mypromise = new Promise((resolve,reject) =>{
-            store.get('user').then((data)=>{
+            data = store.get('user');
+            if(data){
                 if(data){
                     const usr = data.name;
                     setUsernm(usr);
@@ -15,7 +16,7 @@ export default function WelcomeBack({setwpage}){
                 }else{
                     reject(setUsernm(""));
                 }
-            })
+            }
         });
         mypromise.then(()=>{
             setwpage(true);
