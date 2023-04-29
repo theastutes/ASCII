@@ -1,28 +1,32 @@
 import Sidebar from "./components/Sidebar";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import { useNavigate } from "react-router-dom";
-
+import WelcomeBack from "./components/WelcomeBack";
 export default function Home() {
   
   // const { isAuthenticated } = useContext(Context);
   // const navigate = useNavigate();
   // if (!isAuthenticated) return navigate("/login");
-  const navigate = useNavigate();
-const user = store.get('user');
-if(user){
-  navigate("/dashboard");
-}
+  const [isuser,setIsuser] = useState({});
+  const [wpage,setwpage] = useState(true);
+
+  useEffect(()=>{
+    const user = store.get('user');
+    setIsuser(user);
+  },[])
   
   return (
     <>
       <Header />
 
-      <Sidebar />
+      <Sidebar setwpage = {setwpage}/>
 
-      <Navbar />
+      {isuser && wpage && <WelcomeBack setwpage = {setwpage}/>}
+
+      <Navbar setwpage = {setwpage}/>
       
 
       {/* <div
