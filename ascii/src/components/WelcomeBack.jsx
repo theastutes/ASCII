@@ -5,12 +5,19 @@ import { Link } from "react-router-dom";
 export default function WelcomeBack({setwpage}){
     const [usernm,setUsernm] = useState('');
     useEffect(()=>{
-        const usrr = store.get('user');
-        
-        const usr = usrr.name;
-        const nameindex = usr.indexOf(" ");
-        const name = usr.substring(0,nameindex);
-        setUsernm(name);
+        mypromise = new Promise((resolve,reject) =>{
+            store.get('user').then((data)=>{
+                if(data){
+                    const usr = data.name;
+                    resolve(setUsernm(usr));
+                }else{
+                    reject(setUsernm(""));
+                }
+            })
+        });
+        mypromise.then(()=>{
+            setwpage(true);
+        })
     },[]);
     return (
         <div className='absolute w-screen mt-10 fd:ml-24 h-screen m-2 rounded-xl flex flex-col text-white items-center backdrop-blur-sm'>
