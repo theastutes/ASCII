@@ -2,7 +2,7 @@ import Sidebar from "./components/Sidebar";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 import { useEffect, useState } from "react";
-
+import { nanoid } from "nanoid";
 import { useNavigate } from "react-router-dom";
 import WelcomeBack from "./components/WelcomeBack";
 export default function Home() {
@@ -17,11 +17,11 @@ export default function Home() {
     <>
       <Header />
 
-      <Sidebar setwpage = {setwpage}/>
+      <Sidebar setwpage = {setwpage} key={nanoid(5)}/>
 
-      {wpage && <WelcomeBack setwpage = {setwpage}/>}
+      {wpage && <WelcomeBack setwpage = {setwpage} key = {nanoid(4)}/>}
 
-      <Navbar setwpage = {setwpage}/>
+      <Navbar setwpage = {setwpage} key = {nanoid(6)}/>
       
 
       {/* <div
