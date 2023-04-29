@@ -19,7 +19,7 @@ export default function Home() {
 
       <Sidebar setwpage = {setwpage}/>
 
-      {isuser && wpage && <WelcomeBack setwpage = {setwpage}/>}
+      {wpage && <WelcomeBack setwpage = {setwpage}/>}
 
       <Navbar setwpage = {setwpage}/>
       
