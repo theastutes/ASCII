@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import store from 'store';
 import { Link } from "react-router-dom";
 
-export default function WelcomeBack(props){
+export default function WelcomeBack({setwpage}){
     const [usernm,setUsernm] = useState('');
     useEffect(()=>{
         const usr = store.get('user').name;
@@ -15,7 +15,7 @@ export default function WelcomeBack(props){
             <h1 className='mb-5'> Hey! {usernm}</h1>
             <p className='m-5'>Check out latest updates now!</p>
             
-            <Link to = "/dashboard" onClick = {props.setwpage}>
+            <Link to = "/dashboard" onClick = {setwpage}>
                 <button className='loginbtn'>Go to Dashboard</button>
             </Link>
 
