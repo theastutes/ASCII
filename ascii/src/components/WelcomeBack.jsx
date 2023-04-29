@@ -3,9 +3,10 @@ import store from 'store';
 import { Link } from "react-router-dom";
 
 export default function WelcomeBack({setwpage}){
+
     const [usernm,setUsernm] = useState('');
     useEffect(()=>{
-        mypromise = new Promise((resolve,reject) =>{
+       const mypromise = new Promise((resolve,reject) =>{
             store.get('user').then((data)=>{
                 if(data){
                     const usr = data.name;
