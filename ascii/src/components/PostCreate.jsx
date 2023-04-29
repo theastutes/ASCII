@@ -101,7 +101,7 @@ function PostCreate(props) {
 
   return (
     <div className="absolute md:w-[100%] fd:left-[214px] flex items-center justify-center fd:w-[81.8%] top-[52px] fd:bottom-0 md:bottom-[48px] backdrop-blur-lg  bg-white/10 p-8 rounded-lg z-40">
-      <div className="bg-white/60  p-4 flex flex-col gap-2 md:w-[100%] fd:w-[65%] fd:h-[50%]   rounded-xl  shadow-md shadow-zinc-500/25">
+      <div className="bg-zinc-100/60  p-4 flex flex-col gap-2 md:w-[100%] fd:w-[65%] fd:h-[50%]   rounded-xl  shadow-md shadow-zinc-500/25">
         <div className="fd:grid fd:grid-cols-2 fd:gap-2">
           <div>
             <div>
@@ -167,7 +167,7 @@ function PostCreate(props) {
           </div>
         )}
         {!show && (
-          <div className="  px-3 text-[20px] fd:flex flex-row justify-between rounded-lg fd:w-[50%] ">
+          <div className="  px-3 text-[20px] flex flex-row justify-between rounded-lg fd:w-[50%] ">
             <button
               type="button"
               name="photo"
@@ -179,6 +179,7 @@ function PostCreate(props) {
             <button type="submit" name="send" onClick={sendPost}>
               <i class="fa fa-paper-plane" aria-hidden="true"></i>
             </button>
+
           </div>
         )}
       </div>

@@ -18,7 +18,7 @@ export default function Header() {
   const user = store.get("user");
   return (
     <>
-      <div className="fixed  w-screen flex align-middle justify-end pt-[9px] pb-[9px] top-[0px] text-xl md:bg-white/50 fd:bg-white/90 fd:rounded-sm fd:shadow-none fd:border-b-2 fd:border-b-zinc-300 backdrop-blur-lg z-50 shadow-zinc-200 shadow-md rounded-md">
+      <div className="fixed  w-screen flex align-middle justify-end pt-[9px] pb-[9px] top-[0px] text-xl md:bg-white/50 fd:bg-white/90 fd:rounded-sm fd:shadow-none fd:border-b-2 fd:border-b-zinc-300 backdrop-blur-lg z-50 shadow-zinc-200 shadow-md md:border-[1px] md:border-zinc-800/5 rounded-md">
         <Link
           to = "/dashboard"
           className="flex flex-row text-[25px] mr-auto ml-6  pl-2 pr-2  text-black"

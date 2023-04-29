@@ -75,7 +75,7 @@ button {
     padding-top: 15px;
     padding-bottom: 15px;
     transform-style: preserve-3d;
-    scroll-behavior: smooth;
+    scroll-behavior: auto;
   }
 
   .QList {
