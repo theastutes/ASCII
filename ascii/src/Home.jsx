@@ -18,13 +18,13 @@ export default function Home() {
   
   return (
     <>
-      <Header />
+      <Header/>
 
-      <Sidebar />
+      <Sidebar setwpage = {handlewpage}/>
 
       {wpage && <WelcomeBack setwpage = {handlewpage} />}
 
-      <Navbar />
+      <Navbar setwpage = {handlewpage} />
       
 
       {/* <div
