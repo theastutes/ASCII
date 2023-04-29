@@ -10,13 +10,8 @@ export default function Home() {
   // const { isAuthenticated } = useContext(Context);
   // const navigate = useNavigate();
   // if (!isAuthenticated) return navigate("/login");
-  const [isuser,setIsuser] = useState({});
-  const [wpage,setwpage] = useState(true);
 
-  useEffect(()=>{
-    const user = store.get('user');
-    setIsuser(user);
-  },[])
+  const [wpage,setwpage] = useState(true);
   
   return (
     <>
