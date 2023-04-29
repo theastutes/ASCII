@@ -10,7 +10,8 @@ export default function WelcomeBack({setwpage}){
             store.get('user').then((data)=>{
                 if(data){
                     const usr = data.name;
-                    resolve(setUsernm(usr));
+                    setUsernm(usr);
+                    resolve();
                 }else{
                     reject(setUsernm(""));
                 }
@@ -18,6 +19,7 @@ export default function WelcomeBack({setwpage}){
         });
         mypromise.then(()=>{
             setwpage(true);
+
         })
     },[]);
     return (
