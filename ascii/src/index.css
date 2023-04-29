@@ -63,7 +63,7 @@ button {
     height: 90%;
   }
   .section {
-    position: static;
+    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
