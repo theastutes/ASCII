@@ -10,8 +10,11 @@ export default function Home() {
   // const { isAuthenticated } = useContext(Context);
   // const navigate = useNavigate();
   // if (!isAuthenticated) return navigate("/login");
-  
-
+  const navigate = useNavigate();
+const user = store.get('user');
+if(user){
+  navigate("/dashboard");
+}
   
   return (
     <>
