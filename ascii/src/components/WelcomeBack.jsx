@@ -15,7 +15,7 @@ export default function WelcomeBack(props){
             <h1 className='mb-5'> Hey! {usernm}</h1>
             <p className='m-5'>Check out latest updates now!</p>
             
-            <Link to = "/dashboard" onClick = {(e)=>props.setwpage(false)}>
+            <Link to = "/dashboard" onClick = {props.setwpage}>
                 <button className='loginbtn'>Go to Dashboard</button>
             </Link>
 

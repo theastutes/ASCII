@@ -12,16 +12,19 @@ export default function Home() {
   // if (!isAuthenticated) return navigate("/login");
 
   const [wpage,setwpage] = useState(true);
+  function handlewpage(){
+      setwpage(false);
+  }
   
   return (
     <>
       <Header />
 
-      <Sidebar setwpage = {setwpage} key={nanoid(5)}/>
+      <Sidebar />
 
-      {wpage && <WelcomeBack setwpage = {setwpage} key = {nanoid(4)}/>}
+      {wpage && <WelcomeBack setwpage = {handlewpage} />}
 
-      <Navbar setwpage = {setwpage} key = {nanoid(6)}/>
+      <Navbar />
       
 
       {/* <div
