@@ -100,7 +100,7 @@ function PostCreate(props) {
   }
 
   return (
-    <div className="absolute md:w-[100%] fd:left-[214px] flex items-center justify-center fd:w-[81.8%] top-[52px] fd:bottom-0 md:bottom-[48px] backdrop-blur-lg  bg-white/10 p-8 rounded-lg z-40">
+    <div className="absolute md:w-[100%] fd:left-[214px] h-screen overscroll-y-none flex items-center justify-center fd:w-[81.8%] top-[52px] fd:bottom-0 md:bottom-[48px] backdrop-blur-lg  bg-white/10 p-8 rounded-lg z-40">
       <div className="bg-zinc-100/60  p-4 flex flex-col gap-2 md:w-[100%] fd:w-[65%] fd:h-[50%]   rounded-xl  shadow-md shadow-zinc-500/25">
         <div className="fd:grid fd:grid-cols-2 fd:gap-2">
           <div>
